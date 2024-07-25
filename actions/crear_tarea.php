@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Controllers\TareaController;
-
+session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $datos = [
         'nombre' => $_POST['nombre'],
@@ -20,12 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ? '<div class="alert alert-success">Tarea Creada Correctamente</div>'
         : '<div class="alert alert-danger">Error al crear la tarea.</div>';
 
-    session_start();
+    
     $_SESSION['mensaje'] = $mensaje;
     header('Location: /gestion_tareas_crud/index.php');
     exit();
 } else {
-    http_response_code(405);
-    echo json_encode(['error' => 'Método no permitido.']);
+    $_SESSION['mensaje'] = '<div class="alert alert-danger">Método no permitido.</div>';
 }
 ?>
