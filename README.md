@@ -23,13 +23,14 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
 Ejecuta Composer en la consola para instalar las dependencias:
 
-composer install
+```bash composer install ```bash
 3.**Configurar el archivo .env**
 
 Copia el archivo de ejemplo .env.example a un nuevo archivo .env:
-cp .env.example .env
+```cp .env.example .env ```bash
 
 4. Editar el archivo .env para configurar las credenciales de la base de datos y otros parámetros necesarios:
+   
 DB_CONNECTION=mysql
 DB_HOST=localhost
 DB_DATABASE=nombre_base_datos
