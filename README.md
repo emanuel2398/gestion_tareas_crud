@@ -1,6 +1,6 @@
 # Gestión de Tareas CRUD
 
-Este proyecto es una aplicación PHP que permite gestionar tareas mediante un CRUD (Crear, Leer, Actualizar, Eliminar). Utiliza PHP y MySQL para el backend y Bootstrap para el frontend.
+Este proyecto es una aplicación PHP que permite gestionar tareas mediante un CRUD (Crear, Leer, Actualizar, Eliminar). Utiliza PHP y MySQL para el backend.
 
 ## Requisitos
 
@@ -19,15 +19,17 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
    ```bash
    git clone https://github.com/emanuel2398/gestion_tareas_crud.git
+   
 2. **Instalar dependencias**
 
 Ejecuta Composer en la consola para instalar las dependencias:
 
-```bash composer install ```bash
+```bash composer install ```
+
 3.**Configurar el archivo .env**
 
 Copia el archivo de ejemplo .env.example a un nuevo archivo .env:
-```cp .env.example .env ```bash
+```cp .env.example .env ```
 
 4. Editar el archivo .env para configurar las credenciales de la base de datos y otros parámetros necesarios:
    
